@@ -84,9 +84,8 @@ function resolveSelect()
   if( id1.substring(0,id1.length-1) == id2.substring(0,id2.length-1) ) {
     found++;
     if(found==numPairs) {
-      saveResult(time, moves);
-      var again = window.confirm("Wygrales! Jeszcze raz?");
-      if(again == true) document.location.reload(true);
+      var again = window.confirm("Wygrales! Zapisać wynik?");
+      if(again == true) saveResult(time, moves);
     }
     tile1.onclick = function(){};
     tile2.onclick = function(){};
@@ -109,21 +108,9 @@ function saveResult(time, moves)
     "moves": moves
   }
   console.log(result);
-  WriteDemo(result);
+  window.open("save.php?time="+time+"&moves="+moves+"&set="+imageSet);
 }
 
-function WriteDemo(text)
-{
- var fso, f, r;
- var ForReading = 1, ForWriting = 2;
- fso = new ActiveXObject("Scripting.FileSystemObject");
- f = fso.OpenTextFile("results.json", ForWriting, true);
- f.Write(text);
- f.Close();
- f = fso.OpenTextFile("results.json", ForReading);
- r = f.ReadLine();
- return(r);
-}
 
 //function from http://stackoverflow.com/questions/6274339/how-can-i-shuffle-an-array-in-javascript
 function shuffle(array)

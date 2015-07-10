@@ -1,11 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
+<?php include "../res/header.php"?>
 <title>SUDOKU</title>
-<link rel="stylesheet" href="../bootstrap3/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="../res/style.css"/>
-
   <style>
 * {
 font-size: 1.2em;
@@ -288,12 +282,8 @@ font-weight: bold;
 
 </center>
 
-    <aside>
-      <a href="../memory/index.html"><div class="small icon" style="background-image: url('../res/memory.png')"></div></a>
-      <a href="../sudoku/index.html"><div class="small icon" style="background-image: url('../res/sudoku.png')"></div></a>
-      <a href="../quiz/index.html"><div class="small icon" style="background-image: url('../res/quiz.png')"></div></a>
-    </aside>
-<script src="sudoku.js"></script>
+    <?php include "../res/menu.php"?>
+	<script src="sudoku.js"></script>
 
 </body>
 </html>
