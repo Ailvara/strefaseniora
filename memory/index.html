@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<htmL>
+  <html lang="pl">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Memory</title>
+    <link rel="stylesheet" href="../bootstrap3/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../res/style.css"/>
+    <style>
+    .tile {
+      width: 150px;
+      height: 150px;
+      margin: 10px;
+      display: inline-block;
+      background-size: contain;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+    <div class="col-md-2" style="padding: 10px">
+      <h4>Liczba ruchów:</h4>
+      <span id="moves">0</span><br><br>
+      <h4>Czas:</h4>
+      <span id="time"></span><br>
+      <h4>Zestaw obrazkow</h4>
+      <select name="setSelect" id="setSelect"></select>
+    </div>
+
+    <div id="canvas" class="col-md-10">
+      <button id="startButton" onclick="javascript:memory(sets[setSelect.selectedIndex])" style="margin: 20%; width: 60%">Start!</button>
+    </div>
+    </div>
+
+    <aside>
+      <a href="../memory/index.html"><div class="small icon" style="background-image: url('../res/memory.png')"></div></a>
+      <a href="../sudoku/index.html"><div class="small icon" style="background-image: url('../res/sudoku.png')"></div></a>
+      <a href="../quiz/index.html"><div class="small icon" style="background-image: url('../res/quiz.png')"></div></a>
+    </aside>
+
+  </body>
+
+  <script src="config.js"></script>
+  <script src="memory.js"></script>
+
+</html>

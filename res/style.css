@@ -1,0 +1,31 @@
+div.icon {
+  box-sizing: border-box;
+  text-align: center;
+  vertical-align: middle;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+* {
+  font-size: 1.5em;
+}
+
+aside {
+  position: fixed;
+  width: 100px;
+  height: 100%;
+  background-color: #444;
+  z-index: 400;
+  top: 0;
+}
+
+div.small {
+  height: 80px;
+  width: 80px;
+  margin: 10px;
+}
+
+.container {
+  margin-left: 100px;
+}
