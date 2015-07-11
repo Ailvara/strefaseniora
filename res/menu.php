@@ -9,7 +9,7 @@ echo '
 <section style="bottom: 0; position: fixed; color: #fff; text-align: center">
 ';
 
-	if($_SESSION['logged'] == true){ 
+	if(isset($_SESSION['logged']) && $_SESSION['logged'] == true){ 
 		echo('<a href="../memory/index.php"><div class="small icon" style="background-image: url(\'https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/People_icon.svg/100px-People_icon.svg.png\')"></div></a>'
 		. $_SESSION['login'] . '<br><a href="../index.php?logout=true">wyloguj</div></a></div>');
 	}
