@@ -21,6 +21,8 @@
       <select name="setSelect" id="setSelect"></select>
     </div>
 
+	<?php include "load.php"?>
+	
     <div id="canvas" class="col-md-10">
       <button id="startButton" onclick="javascript:memory(sets[setSelect.selectedIndex])" style="margin: 20%; width: 60%">Start!</button>
     </div>
@@ -30,7 +32,6 @@
 
   </body>
 
-  <script src="config.js"></script>
   <script src="memory.js"></script>
 
 </html>

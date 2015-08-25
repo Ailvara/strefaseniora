@@ -1,0 +1,93 @@
+<NotepadPlus>
+    <Project name="Nazwa projektu">
+        <Folder name="bootstrap3">
+            <Folder name="css">
+                <File name="bootstrap3\css\bootstrap-theme.css" />
+                <File name="bootstrap3\css\bootstrap-theme.css.map" />
+                <File name="bootstrap3\css\bootstrap-theme.min.css" />
+                <File name="bootstrap3\css\bootstrap.css" />
+                <File name="bootstrap3\css\bootstrap.css.map" />
+                <File name="bootstrap3\css\bootstrap.min.css" />
+            </Folder>
+            <Folder name="fonts">
+                <File name="bootstrap3\fonts\glyphicons-halflings-regular.eot" />
+                <File name="bootstrap3\fonts\glyphicons-halflings-regular.svg" />
+                <File name="bootstrap3\fonts\glyphicons-halflings-regular.ttf" />
+                <File name="bootstrap3\fonts\glyphicons-halflings-regular.woff" />
+                <File name="bootstrap3\fonts\glyphicons-halflings-regular.woff2" />
+            </Folder>
+            <Folder name="js">
+                <File name="bootstrap3\js\bootstrap.js" />
+                <File name="bootstrap3\js\bootstrap.min.js" />
+                <File name="bootstrap3\js\jquery.js" />
+                <File name="bootstrap3\js\npm.js" />
+            </Folder>
+        </Folder>
+        <Folder name="legacy">
+            <File name="legacy\screen.png" />
+        </Folder>
+        <Folder name="manage">
+            <File name="manage\login.php" />
+        </Folder>
+        <Folder name="memory">
+            <Folder name="def">
+                <File name="memory\def\0.png" />
+                <File name="memory\def\1a.png" />
+                <File name="memory\def\1b.png" />
+                <File name="memory\def\2a.png" />
+                <File name="memory\def\2b.png" />
+                <File name="memory\def\3a.png" />
+                <File name="memory\def\3b.png" />
+                <File name="memory\def\4a.png" />
+                <File name="memory\def\4b.png" />
+                <File name="memory\def\5a.png" />
+                <File name="memory\def\5b.png" />
+                <File name="memory\def\6a.png" />
+                <File name="memory\def\6b.png" />
+                <File name="memory\def\7a.png" />
+                <File name="memory\def\7b.png" />
+            </Folder>
+            <Folder name="own">
+                <File name="memory\own\0.png" />
+                <File name="memory\own\1a.png" />
+                <File name="memory\own\1b.png" />
+                <File name="memory\own\2a.png" />
+                <File name="memory\own\2b.png" />
+                <File name="memory\own\3a.png" />
+                <File name="memory\own\3b.png" />
+                <File name="memory\own\4a.png" />
+                <File name="memory\own\4b.png" />
+            </Folder>
+            <File name="memory\config.js" />
+            <File name="memory\index.php" />
+            <File name="memory\memory.js" />
+            <File name="memory\results.json" />
+            <File name="memory\save.php" />
+        </Folder>
+        <Folder name="quiz">
+            <File name="quiz\Biologia.docx" />
+            <File name="quiz\Geografia.docx" />
+            <File name="quiz\Historia.docx" />
+            <File name="quiz\index.php" />
+            <File name="quiz\quiz.js" />
+            <File name="quiz\~$staw_pyta&#x0144;_historia__fina&#x0142;_Gim._2014.doc" />
+        </Folder>
+        <Folder name="res">
+            <File name="res\header.php" />
+            <File name="res\layout.php" />
+            <File name="res\memory.png" />
+            <File name="res\menu.php" />
+            <File name="res\quiz.png" />
+            <File name="res\style.css" />
+            <File name="res\sudoku.png" />
+        </Folder>
+        <Folder name="sudoku">
+            <File name="sudoku\index.php" />
+            <File name="sudoku\sudoku.js" />
+        </Folder>
+        <File name=".gitattributes" />
+        <File name=".gitignore" />
+        <File name="index.php" />
+        <File name="strefaseniora.sql" />
+    </Project>
+</NotepadPlus>

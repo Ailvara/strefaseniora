@@ -53,15 +53,18 @@
 
 	if(isset($_POST['log_in'])) {
 
-		$check = mysql_query('SELECT password FROM users WHERE email="'.$_POST['login'].'"');
-		$pass = mysql_fetch_array($check)['password'];
+		$check = mysql_query('SELECT * FROM users WHERE email="'.$_POST['login'].'"');
+		$query = mysql_fetch_array($check);
+		$pass = $query['password'];
 		
 		if($pass==$_POST['password']) {
 			echo 'Zalogowano';
 			$_SESSION['logged'] = true;
 			$_SESSION['login'] = $_POST['login'];
+			$_SESSION['id'] = $query['id'];
 			$_SESSION['password'] = $_POST['password'];
-			header('Location: ../index.php');
+			$_SESSION['caretaker'] = $query['caretaker'];
+			//header('Location: ../index.php');
 		} else echo "Niewłaściwy login lub hasło.".$form;
 		
 	} else echo($form);

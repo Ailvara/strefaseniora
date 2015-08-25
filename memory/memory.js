@@ -1,7 +1,8 @@
 function memory(set){
 
 numPairs = set[1];
-imageSet = set[0]
+imageSet = set[0];
+imgs = js_format[imageSet];
 
 var startTime = new Date().getTime();
 document.getElementById('time').innerHTML = 0;
@@ -9,13 +10,11 @@ document.getElementById('time').innerHTML = 0;
 var canvas = document.getElementById('canvas');
 document.getElementById('startButton').style.display='none';
 
-var defPath = imageSet+'/0.png';
+var defPath = 'http://www.kartonista.com/wp-content/uploads/2011/01/van-gogh-vincent-self-portrait.jpg';
 
 var select = [];
 var found = 0;
 var moves = 0;
-
-var imgs = [];
 
 var location = document.location.href.replace("memory.html","");
 console.log(location);
@@ -25,29 +24,20 @@ setBoard();
 function setBoard()
 {
   maxImgs = 14;
-
-  for(var i=1; i<=numPairs; i++)
-  {
-    imgA = new Image();
-    imgA.src = imageSet+"/"+i.toString()+"a.png";
-    imgB = new Image();
-    imgB.src = imageSet+"/"+i.toString()+"b.png";
-    imgs.push(imgA);
-    imgs.push(imgB);
-  }
   imgs = shuffle(imgs);
 
-  while(imgs.length>0)
+  for(var c=1; c<=numPairs; c++)
   {
-    var tile = new Tile(i,imgs.pop().src);
+    var tile = new Tile(c+"a",imgs[c+"a"]);
+    var tile = new Tile(c+"b",imgs[c+"b"]);
+	console.log("I work");
   }
 }
 
 function Tile(id,url)
 {
   this.url=url;
-  var id=url.substring(0, url.length - 4);
-  var id = id.replace(location, "");
+  this.id=id;
 
   var tile = document.createElement("div");
   tile.setAttribute('id',id);
