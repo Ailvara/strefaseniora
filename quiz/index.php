@@ -3,7 +3,7 @@
 	<style>
 		div#test{ border:#000 1px solid; padding:10px 40px 40px 40px; }
 	</style>
-	<script src="quiz.js"></script>
+	<?php include "quiz.php"?>
 </head>
 <body>
 	<div class="container">

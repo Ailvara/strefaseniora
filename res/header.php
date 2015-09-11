@@ -5,6 +5,7 @@ if(!isset($_SESSION)){
 
 echo '
 <!DOCTYPE html>
+<meta charset="utf-8">
 <html>
   <html lang="pl">
   <head>

@@ -101,6 +101,9 @@ var questions = [
 	[ historia[id8][0], historia[id8][1], historia[id8][2], historia[id8][3], historia[id8][4]],
 	[ historia[id9][0], historia[id9][1], historia[id9][2], historia[id9][3], historia[id9][4]],
 ];
+
+console.log(questions);
+
 function _(x){
 	return document.getElementById(x);
 }

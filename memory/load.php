@@ -1,5 +1,4 @@
-
-	<?php
+<?php
 	$sets = [];
 	$items = [];
 	mysql_connect("localhost","root","");
@@ -16,8 +15,6 @@
 		while($item=array_pop($items)){
 			array_push($ready_sets[$item['set']], $item);
 		}
-		
-		
 		
 	echo '<script>';
 	
