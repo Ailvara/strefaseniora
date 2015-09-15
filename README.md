@@ -1,10 +1,22 @@
-# strefaseniora
-Projekt z telematyki
+Cel projektu<bR>
+Celem projektu była implementacja serwisu umożliwiającego osobom starszym rozwój umysłowy poprzez zabawę oraz monitorowanie wyników gier.<br><br>
 
-Instalacja:<br>
-1. Bedzie potrzebny jakis serwer np. xampp. <br>
-2. Kopiujemy wszystkie pliki do odpowiedniego dla serwera folderu np. dla xamppa - htdocs i uruchamiamy serwer i mysql. Najlepiej zainstalowac github, mozna tez ew. sciagnac stad zipa, ale wtedy nie da sie wgrac zrobionych zmian<br>
-3. Wchodzimy do bazy (np. localhost/phpmyadmin), tworzymy baze strefaseniora i wklejamy sql z pliku strefaseniora.sql. Dane dostepu zostaja bez zmian (uzytkownik root i brak hasla)<br>
-4. Appka powinna byc pod adresem localhost/strefaseniora<br>
-<br>
-Trzeba zrobić sudoku, ewentualnie jakies poprawki, i ogarnac takie rzeczy jak instrukcja, ewentualna prezentacja/filmik/wgranie na zewnetrzny serwer
+Zaimplementowane funkcjonalności<br>
+<li>logowanie i rejestracja
+<li>podział na użytkowników-pacjentów i opiekunów
+<li>przypisanie pacjenta do opiekuna
+<li>gra memory
+<li>wybór zestawu obrazków
+<li>możliwość zdefiniowania nieidentycznych par obrazków
+<li>zapis wyników (czas, liczba ruchów)
+<li>podgląd wyników przez opiekuna
+<li>gra sudoku
+<li>gra quiz
+<li>zapis wyników (liczba poprawnych odpowiedzi)
+<li>możliwość konfiguracji poprzez wpisy w bazie danych<br>
+
+Dane techniczne<br>
+<li>serwis webowy 
+<li>wykorzystanie technologii HTML, CSS, JS, SQL i PHP
+<li>testowanie na lokalnym serwerze Apache z MySQL
+<li>prosty, ręcznie wykonany interfejs z wielkością czcionki dostosowaną do osób starszych i niedowidzących
